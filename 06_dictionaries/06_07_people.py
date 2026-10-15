@@ -6,23 +6,23 @@ People
 
 
 person1 = {
-    "first_name": "Robert",
-    "last_name": "Downey Jr",
-    "age": 61,
+    "first_name": "Roquan",
+    "last_name": "Downep Jr",
+    "age": 58,
     "city": "New York City"
 }
 
 person2 = {
-    "first_name": "Chris",
+    "first_name": "Mike",
     "last_name": "Evans",
-    "age": 45,
+    "age": 98,
     "city": "Boston, Massachusetts"
 }
 
 person3 = {
     "first_name": "Mark",
-    "last_name": "Ruffalo",
-    "age": 58,
+    "last_name": "Rualo",
+    "age": 36,
     "city": "Keosha, Wisconsin"
 }
 
