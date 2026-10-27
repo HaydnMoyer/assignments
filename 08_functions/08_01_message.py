@@ -1,0 +1,10 @@
+'''
+Haydn Moyer
+Message
+
+'''
+
+def display_message():
+    print("Hello, this is a simple function!")
+
+display_message()
