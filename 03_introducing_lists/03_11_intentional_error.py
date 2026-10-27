@@ -7,6 +7,8 @@ intentional error
 
 
 
+guest_list = ['Tom holland', 'Ryan Reynolds', 'Chris Pratt', 'Oscar Isaac', 'Chris Hemsworth', 'Josh Brolin']
+
 print(guest_list)
 
 '''
