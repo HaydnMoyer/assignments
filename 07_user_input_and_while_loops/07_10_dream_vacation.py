@@ -3,7 +3,7 @@ Haydn Moyer
 dream vacation
 
 '''
-
+responses = {}
 
 while True:
     name = input("What is your name? ")
