@@ -9,7 +9,7 @@ City names
 
 
 def city_name(city, country):
-    return f"{city.title()}, {country.title()}"
+    return f"{city}, {country}"
 
 print(city_name("Santiago", "Chile"))
 print(city_name("London", "England"))

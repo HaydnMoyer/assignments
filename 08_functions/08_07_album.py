@@ -4,12 +4,12 @@ album
 
 '''
 
-def make_album(artist, title, tracks=None):
-    album = {'artist': artist, 'title': title}
+def make_album(artist, tracks=None):
+    album = {'artist': artist}
     if tracks:
         album['tracks'] = tracks
     return album
 
 # Example usage:
-print(make_album("The Beatles", "Abbey Road"))
-print(make_album("Pink Floyd", "Wish You Were Here", 10))
+print(make_album("The Beatles", 17))
+print(make_album("Pink Floyd", 10))
