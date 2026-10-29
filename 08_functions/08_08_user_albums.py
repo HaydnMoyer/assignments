@@ -4,8 +4,8 @@ user albums
 
 '''
 
-def make_album(artist, title, tracks=None):
-    album = {'artist': artist, 'title': title}
+def make_album(artist, tracks=None):
+    album = {'artist': artist}
     if tracks:
         album['tracks'] = tracks
     return album
