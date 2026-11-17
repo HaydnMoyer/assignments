@@ -6,9 +6,9 @@ users
 
 class User:
     def __init__(self, first_name, last_name, email):
-        self.first_name = Haydn
-        self.last_name = Moyer
-        self.email = haydn.moyer001@albright.edu
+        self.first_name = first_name
+        self.last_name = last_name
+        self.email = email
 
     def describe_user(self):
         print(f"User: {self.first_name} {self.last_name}, Email: {self.email}")

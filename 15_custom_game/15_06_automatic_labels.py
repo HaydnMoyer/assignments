@@ -1,0 +1,60 @@
+'''haydn
+ Moyer
+colored cubes
+'''
+
+
+
+
+from importlib import import_module
+from random import randint
+
+try:
+    px = import_module("plotly.express")
+except ModuleNotFoundError:
+    px = None
+
+try:
+    Die = import_module("die").Die
+except ModuleNotFoundError:
+    class Die:
+        def __init__(self, num_sides):
+            self.num_sides = num_sides
+
+        def roll(self):
+            return randint(1, self.num_sides)
+
+# Create two D8 dice.
+die_1 = Die(8)
+die_2 = Die(8)
+
+# Make some rolls, and store results in a list (start with 1,000).
+results = []
+for roll_num in range(1_000):
+    result = die_1.roll() + die_2.roll()
+    results.append(result)
+
+# Analyze the results.
+frequencies = []
+max_result = die_1.num_sides + die_2.num_sides
+poss_results = range(2, max_result + 1)
+
+for value in poss_results:
+    frequency = results.count(value)
+    frequencies.append(frequency)
+
+# Visualize the results.
+title = "Results of Rolling Two D8 Dice 1,000 Times"
+labels = {'x': 'Result', 'y': 'Frequency of Result'}
+if px is not None:
+    fig = px.bar(x=poss_results, y=frequencies, title=title, labels=labels)
+
+    # Further customize chart to ensure every bar is labeled.
+    fig.update_layout(xaxis_dtick=1)
+    fig.show()
+else:
+    print(title)
+    for result, frequency in zip(poss_results, frequencies):
+        print(f"{result}: {frequency}")
+
+
